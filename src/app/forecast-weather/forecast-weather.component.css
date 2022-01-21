@@ -1,0 +1,38 @@
+.sun {
+    color : rgb(209, 209, 9);
+    filter : drop-shadow(1px 1px 10px rgb(209, 209, 9));
+}
+
+.day {
+    float:left;
+    margin-left: 150px;
+    text-align: center;
+}
+#form {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#form input[type=text], select {
+    
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  
+
+#form button {
+  color: rgb(20, 18, 18);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+
+}
+   
+  
+  

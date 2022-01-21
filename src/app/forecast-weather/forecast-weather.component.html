@@ -1,0 +1,17 @@
+<form id="form" [formGroup] = "forecastForm" (ngSubmit)="onSubmit()">
+   <input type='text' formControlName="foreCastCity"  placeholder="saisir la ville, pays">
+   <button type="button" class="btn btn-primary">Valider</button> 
+</form>
+<div class='container'>
+    <div class='day' *ngFor="let day of cityForecast">
+        <h2 >{{day.date | date :'MMMM d'}}</h2>
+        <div class ='icon'>
+            <img [src]="getIcon(day.icon)" width="100px" class="rounded mx-auto d-block">
+        </div>
+        <div class='temp'>
+            <h3 style="text-align: center;">Max : {{day.tempMax}} &deg;</h3>
+            <h3>Min : {{day.tempMin}} &deg;</h3>
+        </div>
+    </div>
+
+</div>
